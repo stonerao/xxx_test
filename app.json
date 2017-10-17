@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/member/index",
     "pages/shop/index",
+    "pages/class_list/class_list",
+    "pages/member/index",
     "pages/tie/index",
     "example/dashboard/index",
     "example/btn/index",
@@ -25,7 +26,7 @@
     "example/toptips/index",
     "example/toast/index",
     "template/footer/footer",
-    "pages/class_list/class_list"
+    "template/search/search"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",

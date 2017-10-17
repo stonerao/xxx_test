@@ -1,1 +1,64 @@
 /* pages/class_list/class_list.wxss */
+.class-search{
+  background:#fff; 
+  padding:0 20rpx;
+  padding-top:10rpx;
+}
+.class-item{
+  position: absolute;
+  width:100%;
+  top:90rpx;
+  bottom:0;
+}
+.class-left {
+  width: 25%;
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  border-right: 1px solid #eee;
+}
+
+.class-left-box {
+  border-bottom: 1px solid #eee;
+  padding: 30rpx 0;
+  transition: all 0.2s;
+}
+
+.class-left-box.active {
+  background-color: #bbb;
+  color: #fff;
+}
+
+.class-right {
+  position: absolute; 
+  width:75%;
+  margin-left:25%;
+  top: 0;
+  bottom: 0; 
+  overflow: hidden;
+  padding-bottom:20rpx;
+}
+
+.class-right-box {
+  width: 30%;
+  padding: 24rpx 0;
+  height: 100rpx;
+  background: #fff;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-top: 20rpx;
+  float: left;
+}
+
+.class-right-box .class-shop-img {
+  width: 145rpx;
+  height: 50rpx;
+}
+
+.class-right-box .class-shop-text {
+  width: 100%;
+  overflow: hidden;
+}

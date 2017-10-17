@@ -46,26 +46,63 @@ page {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  line-height: 48rpx; 
+  line-height: 48rpx;
   border-bottom: 1px solid #eee;
-  margin-bottom:15rpx;
+  margin-bottom: 15rpx;
 }
 
 .footer .footer-box {
   flex: 1;
   font-size: 28rpx;
   color: #333;
-  margin:20rpx 0 ;
-  border-left:1rpx solid  #eee;
+  margin: 20rpx 0;
+  border-left: 1rpx solid #eee;
 }
-.footer .footer-box:first-child{
-  border-left:none;
+
+.footer .footer-box:first-child {
+  border-left: none;
 }
+
 #footer {
   line-height: 36rpx;
   text-align: center;
   background: #fff;
   margin-top: 20rpx;
   border-top: 1px solid #eee;
-  padding-bottom:20rpx;
+  padding-bottom: 20rpx;
+}
+
+/*search  */
+
+#search {
+  height: 80rpx;
+  width: 100%;
+  display: flex; 
+}
+.back-red{
+  background-color:red;
+  color:#fff;
+}
+
+.search-input {
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  height: 40rpx;
+  margin: 0;
+  position: relative;
+  top: 10rpx;
+  background: #ededed;
+  padding: 5rpx 20rpx;
+  flex:9;
+}
+
+.search-button {
+  flex: 1;
+  font-size: 28rpx;  
+  line-height:40rpx;
+  padding:5rpx 10rpx;
+  height:40rpx;
+  border-radius:10rpx;
+  border:1rpx solid #eee;
+  margin:12rpx 0 0 20rpx;
 }

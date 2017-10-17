@@ -1,0 +1,8 @@
+
+<template name="search">
+  <view id="search">
+  
+    <input type='text' bindinput='searchFocus' placeholder="请输入要查询内容" class='search-input'></input>
+    <view class="search-button {{val?'back-red':''}}">{{val?'搜索':'取消'}}</view>
+  </view>
+</template>

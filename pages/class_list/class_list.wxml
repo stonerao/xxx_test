@@ -1,2 +1,19 @@
-<!--pages/class_list/class_list.wxml-->
-<text>pages/class_list/class_list.wxml</text>
+<!-- search -->
+<import src="../../template/search/search.wxml" />
+<view class='class-search'>
+  <template is="search" data='{{val:hasSearchVal}}'></template>
+</view>
+<!-- list  -->
+<view class='class-item'>
+  <scroll-view class='class-left' scroll-y="true">
+    <view bindtap='itemsTab' data-index="{{item.index}}" wx:for="{{classItems}}" wx:key="index" wx:for-index="index" wx:for-item="item" class="font-size28 hui-color class-left-box {{indexNum==item.index?'active':''}}">
+      {{item.title}}
+    </view>
+  </scroll-view>
+  <scroll-view class='class-right' scroll-y="true">
+    <view class='class-right-box' wx:for="{{items}}" wx:for-index="index" wx:key="index" wx:for-item="item">
+      <image src="../../images/tubiao.jpg" class="class-shop-img"></image>
+      <view class='class-shop-text font-size28'>{{item.title}}</view>
+    </view>
+  </scroll-view>
+</view>
