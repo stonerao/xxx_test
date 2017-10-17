@@ -1,0 +1,14 @@
+<template name="footer">
+  <view id="footer">
+    <view class="footer">
+      <text class='footer-box'>我的商城</text>
+      <text class='footer-box'>注销</text>
+      <text class='footer-box'>反馈</text>
+      <text class='footer-box'>返回顶部</text>
+    </view>
+    <view class='font-size24 hui-color'>
+      Copyright © 2017
+    </view>
+    <view class='font-size24 hui-color'> panda.test.kh888.cn 版权所有</view>
+  </view>
+</template>

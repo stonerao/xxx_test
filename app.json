@@ -1,5 +1,8 @@
 {
-  "pages":[
+  "pages": [
+    "pages/member/index",
+    "pages/shop/index",
+    "pages/tie/index",
     "example/dashboard/index",
     "example/btn/index",
     "example/badge/index",
@@ -20,14 +23,48 @@
     "example/switch/index",
     "example/tab/index",
     "example/toptips/index",
-    "example/toast/index"
+    "example/toast/index",
+    "template/footer/footer",
+    "pages/class_list/class_list"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#FAFAFA",
-    "navigationBarTitleText": "ZanUI",
-    "navigationBarTextStyle":"black",
-    "backgroundTextStyle":"dark",
+    "navigationBarTitleText": "辣猫",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
     "backgroundColor": "#f9f9f9"
   },
-  "debug": true
+  "debug": true,
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/tie/index",
+        "iconPath": "images/tab/tie.png",
+        "selectedIconPath": "images/tab/tie_tab.png",
+        "text": "贴吧"
+      },
+      {
+        "pagePath": "example/dashboard/index",
+        "iconPath": "images/tab/car.png",
+        "selectedIconPath": "images/tab/car_tab.png",
+        "text": "UI"
+      },
+      {
+        "pagePath": "pages/shop/index",
+        "iconPath": "images/tab/shop.png",
+        "selectedIconPath": "images/tab/shop_tab.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/member/index",
+        "iconPath": "images/tab/member.png",
+        "selectedIconPath": "images/tab/member_tab.png",
+        "text": "我的"
+      }
+    ]
+  }
 }

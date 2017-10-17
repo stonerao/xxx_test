@@ -1,0 +1,71 @@
+.hui-color {
+  color: #999;
+}
+
+page {
+  background: #f5f5f5;
+}
+
+/*字体大小类  */
+
+.font-size20 {
+  font-size: 20rpx;
+}
+
+.font-size22 {
+  font-size: 22rpx;
+}
+
+.font-size24 {
+  font-size: 24rpx;
+}
+
+.font-size26 {
+  font-size: 24rpx;
+}
+
+.font-size28 {
+  font-size: 28rpx;
+}
+
+/*banner  */
+
+.index-swiper {
+  height: 350rpx;
+}
+
+.index-swiper-image {
+  width: 100%;
+  height: 350rpx;
+}
+
+/*footer  */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 48rpx; 
+  border-bottom: 1px solid #eee;
+  margin-bottom:15rpx;
+}
+
+.footer .footer-box {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+  margin:20rpx 0 ;
+  border-left:1rpx solid  #eee;
+}
+.footer .footer-box:first-child{
+  border-left:none;
+}
+#footer {
+  line-height: 36rpx;
+  text-align: center;
+  background: #fff;
+  margin-top: 20rpx;
+  border-top: 1px solid #eee;
+  padding-bottom:20rpx;
+}

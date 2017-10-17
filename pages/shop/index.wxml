@@ -1,0 +1,51 @@
+<!-- banner swiper  -->
+<swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" class="index-swiper">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="index-swiper-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!--city select  -->
+<view class="zan-cell zan-form__item zan-cell--last-child shop-area-flex">
+  <view class="zan-form__input zan-cell__bd shop-area-view">
+    <picker mode="selector" range="{{ area }}" value="{{ areaIndex }}" bindchange="onAreaChange">
+      {{ area[areaIndex] }}
+    </picker>
+  </view>
+  <view class="zan-form__input zan-cell__bd shop-area-view">
+    <picker mode="selector" range="{{ area1 }}" value="{{ areaIndex1 }}" bindchange="onAreaChange1">
+      {{ area1[areaIndex1] }}
+    </picker>
+  </view>
+</view>
+<!--nav  -->
+<view class="nav-list">
+  <view wx:for="{{navList}}" wx:for-index="index" wx:for-item="item" class="nav-list-box">
+  <navigator url="{{item.url}}">
+    <view>
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class='font-size24'>{{item.title}}</view>
+    </navigator>
+  </view>
+</view>
+<!--展示  -->
+<image src="../../images/index/s0_05555036328781546.jpg" class="shop-img"></image>
+<!--商品展示区  -->
+<view class="shop-list">
+  <!--title  -->
+  <view class="shop-list-title">生态礼品套餐专区</view>
+  <!--list  -->
+  <view class="shop-lists">
+    <!-- box  -->
+    <view class="shop-lists-box" wx:for="{{shopList}}" wx:for-index="index" wx:for-index="index" wx:for-item="item">
+      <!-- img  --> 
+      <image src="{{item.img}}"></image> 
+      <!-- title  -->
+      <view class="font-size24 shop-lists-title">{{item.title}}</view>
+      <!-- price  -->
+      <view class='shop-lists-prce'>{{item.price}}</view>
+    </view>
+  </view>
+</view>

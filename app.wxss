@@ -1,11 +1,15 @@
 @import "dist/index.wxss";
 
+/* 公用 */
+@import "styles/index.wxss";
+
 .container {
-  background: #F9F9F9;
+  background: #f9f9f9;
   overflow: hidden;
   min-height: 100vh;
   box-sizing: border-box;
 }
+
 .container::before {
   position: fixed;
   top: 0;
@@ -16,6 +20,7 @@
   background-color: #e2e2e2;
   z-index: 5;
 }
+
 .doc-title {
   font-size: 25px;
   line-height: 25px;
@@ -23,4 +28,121 @@
   padding: 15px 0;
   margin: 20px 15px;
   border-bottom: 1rpx solid #e5e5e5;
+}
+
+/*icon   */
+
+.icon {
+  width: 38rpx;
+  height: 38rpx;
+  float: left;
+  background-size: cover;
+}
+
+.float-left{
+  float:left;
+}
+.float-right{
+  float:right;
+}
+/* 边距 */
+ 
+/*margin  */
+
+.margin-left5rpx {
+  margin-left: 5rpx;
+}
+
+.margin-left10rpx {
+  margin-left: 10rpx;
+}
+
+.margin-left15rpx {
+  margin-left: 15rpx;
+}
+
+.margin-left20rpx {
+  margin-left: 20rpx;
+}
+
+.margin-left25rpx {
+  margin-left: 25rpx;
+}
+
+.margin-left30rpx {
+  margin-left: 30rpx;
+}
+
+.margin-right5rpx {
+  margin-right: 5rpx;
+}
+
+.margin-right10rpx {
+  margin-right: 10rpx;
+}
+
+.margin-right15rpx {
+  margin-right: 15rpx;
+}
+
+.margin-right20rpx {
+  margin-right: 20rpx;
+}
+
+.margin-right25rpx {
+  margin-right: 25rpx;
+}
+
+.margin-right30rpx {
+  margin-right: 30rpx;
+}
+
+/*padding  */
+
+.padding-left5rpx {
+  padding-left: 5rpx;
+}
+
+.padding-left10rpx {
+  padding-left: 10rpx;
+}
+
+.padding-left15rpx {
+  padding-left: 15rpx;
+}
+
+.padding-left20rpx {
+  padding-left: 20rpx;
+}
+
+.padding-left25rpx {
+  padding-left: 25rpx;
+}
+
+.padding-left30rpx {
+  padding-left: 30rpx;
+}
+
+.padding-right5rpx {
+  padding-right: 5rpx;
+}
+
+.padding-right10rpx {
+  padding-right: 10rpx;
+}
+
+.padding-right15rpx {
+  padding-right: 15rpx;
+}
+
+.padding-right20rpx {
+  padding-right: 20rpx;
+}
+
+.padding-right25rpx {
+  padding-right: 25rpx;
+}
+
+.padding-right30rpx {
+  padding-right: 30rpx;
 }

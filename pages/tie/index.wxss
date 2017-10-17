@@ -1,0 +1,27 @@
+/* pages/tie/index.wxss */
+
+
+ .tie-list{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:space-between;
+ }
+ .tie-list .tie-list-box{
+   width:49.5%;
+   text-align:center; 
+   height:100rpx;
+   background:#fff;
+   margin-bottom:8rpx;
+   padding:22rpx 0;
+   line-height:40rpx;
+   position:relative;
+ }
+  .tie-list .tie-list-box::after{
+    content:" ";
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:50rpx;
+    height:10rpx;
+    background:#ccc;
+  }

@@ -1,0 +1,78 @@
+<import src="../../template/footer/footer.wxml"/>
+<!-- head -->
+<view class="member-head"  style='background-image:url("../../images/true.jpg")'>
+  <!-- more  -->
+  <view class="index-more">
+  </view>
+  <!-- head img  -->
+  <view class="member-head-img">
+    <image  src="{{userInfo.avatarUrl}}"></image>
+    <view class='font-size28 member-name'>{{userInfo.nickName}}</view>
+  </view>
+  <!-- shar more  -->
+  <view class='member-head-bottom'>
+    <view class="member-head-more">
+      <view class='member-head-morecell'>
+        <view class='font-size32'>0</view>
+        <view class='font-size28'>商品收藏</view>
+      </view>
+      <view class='member-head-morecell'>
+        <view class='font-size32'>0</view>
+        <view class='font-size28'>店铺收藏</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- order list  -->
+<!-- my order -->
+<view>
+  <view class='member-myorder'>
+    <view class="zan-panel">
+      <view class="zan-cell zan-cell--access">
+        <view class="zan-cell__bd">
+          <view class='icon float-left margin-right10rpx' style='background-image:url("../../images/member/mc_01.png")'></view>
+          <view>我的订单</view>
+        </view>
+        <view class="zan-cell__ft">查看全部订单</view>
+      </view>
+    </view>
+    <view class="member-myorder-list">
+      <view wx:for="{{moreList}}" wx:key="index" class="member-myorder-lists">
+        <view>
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="font-size24 hui-color">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='member-myorder'>
+    <view class="zan-panel">
+      <view class="zan-cell zan-cell--access">
+        <view class="zan-cell__bd">
+          <view class='icon float-left margin-right10rpx' style='background-image:url("../../images/member/mc_01.png")'></view>
+          <view>我的订单</view>
+        </view>
+      </view>
+    </view>
+    <view class="member-myorder-list">
+      <view wx:for="{{priceList}}" wx:key="index" class="member-myorder-lists">
+        <view>
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="font-size24 hui-color">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- list  -->
+<view>
+  <view class="zan-panel">
+    <view class="zan-cell zan-cell--access" wx:for="{{urlList}}">
+      <view class="zan-cell__bd">
+        <view class='icon float-left margin-right10rpx' style='background-image:url({{item.img}})'></view>{{item.title}}</view>
+      <view class="zan-cell__ft"></view>
+    </view>
+  </view>
+</view>
+<!--footer  -->
+<template is="footer"  ></template>
