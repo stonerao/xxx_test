@@ -1,0 +1,25 @@
+<view>
+  <!--head swiper -->
+  <view>
+
+  </view>
+  <!--head info -->
+  <view>
+    <view class='font-size28'>测试商品</view>
+    <view>
+      <text class='font-size24'>￥</text>
+      <text class='font-size30'>1800.00</text>
+    </view>
+  </view>
+</view>
+<!-- 套餐 -->
+<!-- list info data -->
+<view>
+  <view class="zan-panel">
+    <view class="zan-cell">
+      <view class="zan-cell__icon" style="color:#38f;">已选</view>
+      <view class="zan-cell__bd">单行列表</view>
+      <view class="zan-cell__ft">详细信息</view>
+    </view>
+  </view>
+</view>

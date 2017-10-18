@@ -39,13 +39,13 @@
   <!--list  -->
   <view class="shop-lists">
     <!-- box  -->
-    <view class="shop-lists-box" wx:for="{{shopList}}" wx:for-index="index" wx:for-index="index" wx:for-item="item">
+    <navigator url="{{item.url}}" class="shop-lists-box" wx:for="{{shopList}}" wx:for-index="index" wx:for-index="index" wx:for-item="item">
       <!-- img  --> 
       <image src="{{item.img}}"></image> 
       <!-- title  -->
       <view class="font-size24 shop-lists-title">{{item.title}}</view>
       <!-- price  -->
-      <view class='shop-lists-prce'>{{item.price}}</view>
-    </view>
+      <view class='shop-lists-prce'>￥{{item.price}}</view>
+    </navigator>
   </view>
 </view>

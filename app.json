@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/shop_info/shop_info",
     "pages/shop/index",
     "pages/class_list/class_list",
     "pages/member/index",
@@ -53,6 +54,12 @@
         "iconPath": "images/tab/car.png",
         "selectedIconPath": "images/tab/car_tab.png",
         "text": "UI"
+      },
+      {
+        "pagePath": "pages/shop_info/shop_info",
+        "iconPath": "images/tab/car.png",
+        "selectedIconPath": "images/tab/car_tab.png",
+        "text": "测试当前"
       },
       {
         "pagePath": "pages/shop/index",
