@@ -1,66 +1,52 @@
-// pages/shop_info/shop_info.js
-Page({
+var Zan = require('../../dist/index');
 
-  /**
-   * 页面的初始数据
-   */
+Page(Object.assign({}, Zan.Quantity, Zan.Tab, {
   data: {
-  
+    quantity1: {
+      quantity: 1,
+      min: 1,
+      max: 99
+    },
+    imgUrls: [
+      '../../images/index/banner1.jpg',
+      '../../images/index/banner2.jpg',
+      '../../images/index/banner1.jpg',
+      '../../images/index/banner2.jpg',
+    ],
+    indicatorDots: false,
+    autoplay: false,
+    interval: 5000,
+    duration: 2000,
+    tab1: {
+      list: [{
+        id: 'all',
+        title: '商品介绍'
+      }, {
+        id: 'topay',
+        title: '规格参数'
+      }, {
+        id: 'tosend',
+        title: '售后保障'
+      }],
+      selectedId: 'all',
+      scroll: false
+    },
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
+  handleZanQuantityChange(e) {
+    var componentId = e.componentId;
+    var quantity = e.quantity;
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+    this.setData({
+      [`${componentId}.quantity`]: quantity
+    });
   },
+  handleZanTabChange(e) {
+    var componentId = e.componentId;
+    var selectedId = e.selectedId;
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+    this.setData({
+      [`${componentId}.selectedId`]: selectedId
+    });
   }
-})
+}));

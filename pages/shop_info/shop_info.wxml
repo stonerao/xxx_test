@@ -1,25 +1,120 @@
+<import src="/dist/quantity/index.wxml" />
+<import src="/dist/tab/index.wxml" />
 <view>
   <!--head swiper -->
   <view>
-
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" class="index-swiper">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="index-swiper-image" />
+        </swiper-item>
+      </block>
+    </swiper>
   </view>
   <!--head info -->
-  <view>
+  <view class='shop-head border-bottom'>
     <view class='font-size28'>测试商品</view>
-    <view>
+    <view class='shop-head-price'>
       <text class='font-size24'>￥</text>
-      <text class='font-size30'>1800.00</text>
+      <text class='font-size32'>1800.00</text>
     </view>
   </view>
 </view>
 <!-- 套餐 -->
 <!-- list info data -->
 <view>
-  <view class="zan-panel">
-    <view class="zan-cell">
-      <view class="zan-cell__icon" style="color:#38f;">已选</view>
-      <view class="zan-cell__bd">单行列表</view>
-      <view class="zan-cell__ft">详细信息</view>
+  <view class="zan-panel shop-list">
+    <view class='shop-parnt-box border-bottom'>
+      <view class='two-text'>促销</view>
+      <view> 1</view>
+    </view>
+    <view class='shop-parnt-select shop-parnt-box'>
+      <view class='two-text hui-color'>颜色</view>
+      <view class='shop-select'>
+        <text class='active'>123G</text>
+        <text>12233G</text>
+        <text>11223G</text>
+        <text>123G</text>
+        <text>123G</text>
+      </view>
+    </view>
+    <view class='shop-parnt-select shop-parnt-box'>
+      <view class='two-text hui-color'>容量</view>
+      <view class='shop-select'>
+        <text class='active'>123G</text>
+        <text>12233G</text>
+        <text>11223G</text>
+        <text>123G</text>
+        <text>123G</text>
+      </view>
+    </view>
+    <view class='shop-parnt-select shop-parnt-box'>
+      <view class='two-text hui-color'>数量</view>
+      <view class='shop-select' style='padding-bottom:5rpx;'>
+        <template is="zan-quantity" data="{{ ...quantity1, componentId: 'quantity1' }}" />
+      </view>
     </view>
   </view>
+
+</view>
+<!-- adress  -->
+<view class="zan-panel">
+  <view class="zan-cell zan-cell--access">
+    <view class="zan-cell__bd">送至：
+      <text class='margin-right15rpx'>四川</text>
+      <text class='margin-right15rpx'>成都</text>
+      <text class='margin-right15rpx'>龙泉驿</text>
+    </view>
+    <view class="zan-cell__ft"></view>
+  </view>
+</view>
+<view class="zan-panel">
+  <view class="zan-cell zan-cell--access">
+    <view class="zan-cell__bd">当前店铺：
+      <text class='margin-left'>神经病店铺</text>
+    </view>
+    <view class="zan-cell__ft"></view>
+  </view>
+</view>
+<view class='while'>
+  <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd">评价
+      </view>
+      <view class="zan-cell__ft">95% 好评</view>
+    </view>
+  </view>
+
+
+  <view class='shop-comment'>
+    <view class='shop-comment-box'>
+      <!--名字  -->
+      <view class='font-size26 shop-comment-name'>饶砳砳</view>
+      <view class='shop-commen-oks'>
+        <image src="../../images/ok.png"></image>
+        <image src="../../images/ok.png"></image>
+        <image src="../../images/ok.png"></image>
+        <image src="../../images/ok.png"></image>
+        <image src="../../images/ok.png"></image>
+      </view>
+    </view>
+    <view class='font-size26'>
+      我是一大堆的评论；我是一大堆的评论； 是一大堆的评论；我是一大堆的评论；我是一大堆的评论；我是一大堆的评论；我是一大堆的评论；我是一大堆的评论；我是一大堆的评论；我是一大堆的评论；我是一大堆的评论；我是一大堆的评论；
+    </view>
+    <view class='shop-comment-imgs'>
+      <image src='../../images/background.png'></image>
+      <image src='../../images/background.png'></image>
+      <image src='../../images/background.png'></image>
+      <image src='../../images/background.png'></image>
+    </view>
+    <view class='display-flex hui-color font-size26 margin-top10rpx'>
+      <view>2017-10-18</view>
+      <view class='margin-left20rpx'>白色</view>
+    </view>
+  </view>
+</view>
+
+<view style="margin: 20px 0">
+  <template is="zan-tab" data="{{tab: tab1, componentId: 'tab1'}}"></template>
+  <view class='while' wx:if="{{tab1.selectedId=='all'}}">{{tab1.selectedId}}我是介绍</view>
 </view>

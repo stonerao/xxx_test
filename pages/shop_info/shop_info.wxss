@@ -1,1 +1,53 @@
 /* pages/shop_info/shop_info.wxss */
+.shop-parnt-box{
+  display:flex;
+  font-size:26rpx;
+  line-height: 55rpx;
+  padding:10rpx 0;
+}
+.shop-parnt-select{
+   padding-top:15rpx ; 
+}
+.shop-select{
+  overflow:hidden;
+}
+.shop-select text{
+  background:#dedede;
+  border-radius:10rpx;
+  margin-right:20rpx;
+  margin-bottom:15rpx;
+  padding:0rpx 15rpx;
+  float:left;
+}
+.shop-select text.active{
+  color:#fff;
+  background-color:#f03118;
+}
+.shop-list{
+  padding-bottom:10rpx;
+}
+.shop-parnt-box:last-child{
+padding-bottom:20rpx;
+}
+.shop-head-price{
+  line-height:48rpx;
+}
+.shop-head{
+  padding:20rpx;
+}
+.shop-comment{
+  padding:20rpx;
+}
+.shop-comment-box{
+  display:flex;
+  font-size:32rpx;
+}
+.shop-comment-box .shop-commen-oks image{
+  width:28rpx;
+  height:28rpx;
+}
+.shop-comment-name{
+  line-height: 50rpx;
+  margin-right:15rpx;
+}
+ 

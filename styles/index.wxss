@@ -6,6 +6,14 @@ page {
   background: #f5f5f5;
 }
 
+.border-bottom {
+  border-bottom: 1rpx solid #ededed;
+}
+
+.border-top {
+  border-bottom: 1rpx solid #ededed;
+}
+
 /*字体大小类  */
 
 .font-size20 {
@@ -26,6 +34,22 @@ page {
 
 .font-size28 {
   font-size: 28rpx;
+}
+
+.font-size30 {
+  font-size: 30rpx;
+}
+
+.font-size32 {
+  font-size: 32rpx;
+}
+
+.two-text {
+  font-size: 26rpx;
+  width: 60rpx;
+  text-align: center;
+  padding: 0 15rpx;
+  min-width:60rpx;
 }
 
 /*banner  */
@@ -77,11 +101,12 @@ page {
 #search {
   height: 80rpx;
   width: 100%;
-  display: flex; 
+  display: flex;
 }
-.back-red{
-  background-color:red;
-  color:#fff;
+
+.back-red {
+  background-color: red;
+  color: #fff;
 }
 
 .search-input {
@@ -93,16 +118,39 @@ page {
   top: 10rpx;
   background: #ededed;
   padding: 5rpx 20rpx;
-  flex:9;
+  flex: 9;
 }
 
 .search-button {
   flex: 1;
-  font-size: 28rpx;  
-  line-height:40rpx;
-  padding:5rpx 10rpx;
-  height:40rpx;
-  border-radius:10rpx;
-  border:1rpx solid #eee;
-  margin:12rpx 0 0 20rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  padding: 5rpx 10rpx;
+  height: 40rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #eee;
+  margin: 12rpx 0 0 20rpx;
+}
+
+/*shop  */
+.shop-head{
+  background:#fff;
+  padding:10rpx 20rpx;
+}
+.while{
+  background:#fff;
+}
+.display-flex{
+  display:flex;
+  flex-wrap: wrap;
+}
+.shop-comment-imgs{
+  display:flex;
+  flex-wrap:nowrap;
+  margin-top:15rpx;
+}
+.shop-comment-imgs image{
+  width:160rpx;
+  height:160rpx;
+  margin-right:10rpx;
 }

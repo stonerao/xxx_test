@@ -2,7 +2,9 @@
 
 /* 公用 */
 @import "styles/index.wxss";
-
+page{
+  font-size:32rpx;
+}
 .container {
   background: #f9f9f9;
   overflow: hidden;
@@ -145,4 +147,7 @@
 
 .padding-right30rpx {
   padding-right: 30rpx;
+}
+.margin-top10rpx{
+ margin-top:10rpx; 
 }
